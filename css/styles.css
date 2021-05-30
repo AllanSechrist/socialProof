@@ -1,0 +1,193 @@
+/*
+GLOBAL */
+
+body {
+  font-family: "Spartan", sans-serif;
+}
+
+h1, h5 {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.75em;
+}
+
+
+h6 {
+  color: hsl(303, 10%, 53%);
+  line-height: 2;
+  font-size: 0.90em;
+}
+
+
+/* CLASSES */
+
+/* BACKGROUND IMAGES */
+.top-circle-bg, .bottom-circle-bg {
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ background-size: cover;
+ z-index: 1;
+}
+
+.top-circle-bg {
+ /* left: -45%;
+ top: -20%;
+ background-image: url(\images\bg-pattern-top-desktop.svg); */
+ background-position: top left;
+}
+
+.bottom-circle-bg{
+ right: -30%;
+ bottom: -15%;
+ /* background-image: url(\images\bg-pattern-bottom-desktop.svg); */
+ background-position: bottom right;
+}
+
+.container-fluid {
+  padding: 7% 10% 1%;
+}
+
+/* TITLE AND RATINGS */
+
+
+
+.icons {
+  float: left;
+}
+.icons img {
+  margin: 0 3px 20px;
+}
+
+#Top-Rating {
+  margin-left: 71px;
+}
+
+#Middle-Rating {
+  margin-left: 121px;
+}
+
+#Bottom-Rating {
+  margin-left: 171px;
+}
+
+
+.rating {
+  border-radius: 15px;
+  margin-top: 15px;
+  width: 525px;
+  height: 60px;
+  background-color: hsl(300, 24%, 96%);
+  text-align: center;
+  padding: 24px 60px 0 30px;
+}
+
+.rating-title{
+  font-size: 0.85em;
+  margin-right: 0px;
+}
+
+
+/* TESTIMONIALS */
+
+#testimonials .container-fluid {
+  padding-top: 3%
+}
+
+.card {
+  border-radius: 15px;
+  /* width: 383px;
+  height: 250px; */
+  background-color: hsl(300, 43%, 22%);
+  padding: 5%;
+  max-height: 230px;
+}
+
+.card-title {
+  color: #fff;
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.card-subtitle {
+  color: hsl(333, 80%, 67%);
+}
+
+.card-text {
+  margin-top: 25px;
+  color: #fff;
+  font-size: 0.85em;
+  line-height: 1.8;
+}
+
+.profile-image {
+  margin-right: 30px;
+  display: block;
+  max-width:45px;
+  max-height:45px;
+  width:auto;
+  height: auto;
+  border-radius: 50%;
+  float: left;
+}
+
+#middle-card {
+  margin-top: 25px;
+}
+
+#right-card {
+  margin-top: 50px;
+}
+
+/* MEDIA BREAKS */
+
+@media (max-width: 990px){
+  #title{
+    text-align: center;
+  }
+  #Top-Rating {
+    margin-left: 0px;
+  }
+
+  #Middle-Rating {
+    margin-left: 0px;
+  }
+
+  #Bottom-Rating {
+    margin-left: 0px;
+  }
+
+  .rating {
+    width: auto;
+  }
+
+  .ratings-area {
+    margin-bottom: 25px;
+  }
+
+  #middle-card {
+    margin-top: 25px;
+  }
+
+  #right-card {
+    margin-top: 25px;
+  }
+
+}
+
+@media (max-width: 690px) {
+  .icons {
+    float:none;
+  }
+  .rating {
+    height: auto;
+    padding: 20px 0px;
+  }
+}
+
+.attribution {
+  text-align: center;
+}
